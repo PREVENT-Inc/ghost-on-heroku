@@ -4,19 +4,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cobyism/ghost-on-heroku.git"
+    "url": "git://github.com/PREVENT-Inc/ghost-on-heroku.git"
   },
-  "bugs": "https://github.com/TryGhost/Ghost/issues",
+  "bugs": "https://github.com/PREVENT-Inc/Ghost/issues",
   "private": true,
   "version": "1.25.5",
   "dependencies": {
-    "casper": "github:tryghost/Casper#2.1.9",
-    "ghost": "^1.25.5",
-    "ghost-storage-adapter-s3": "^2.3.0",
-    "mysql": "^2.14.1"
+    "casper": "github:tryghost/Casper#2.9.9",
+    "ghost": "2.19.4",
+    "ghost-storage-adapter-s3": "2.8.0",
+    "mysql": "2.16.0"
   },
   "engines": {
-    "node": "10.x"
+    "node": "10.15.3"
   },
   "scripts": {
     "start": "node server.js"

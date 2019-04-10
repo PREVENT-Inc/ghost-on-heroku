@@ -2,13 +2,13 @@
 
 Ghost is a free, open, simple blogging platform. Visit the project's website at <http://ghost.org>, or read the docs on <http://support.ghost.org>.
 
-## Ghost version 1.X
+## Ghost version 2.19.3
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### Things you should know
 
-After deployment,
+After deployment
 - First, visit Ghost at `https://YOURAPPNAME.herokuapp.com/ghost` to set up your admin account
 - The app may take a few minutes to come to life
 - Your blog will be publicly accessible at `https://YOURAPPNAME.herokuapp.com`
@@ -70,7 +70,7 @@ This repository is a [Node.js](https://nodejs.org) web application that specifie
 Optionally after deployment, to push Ghost upgrades or work with source code, clone this repo (or a fork) and connect it with the Heroku app:
 
 ```bash
-git clone https://github.com/cobyism/ghost-on-heroku
+git clone https://github.com/PREVENT-Inc/ghost-on-heroku
 cd ghost-on-heroku
 
 heroku git:remote -a YOURAPPNAME
@@ -98,7 +98,7 @@ See more about [deploying to Heroku with git](https://devcenter.heroku.com/artic
 On each deployment, the Heroku Node/npm build process will **auto-upgrade Ghost to the newest 1.x version**. To prevent this behavior, use npm 5+ (or yarn) to create a lockfile.
 
 ```bash
-npm install
+yarn
 git add package-lock.json
 git commit -m 'Lock dependencies'
 git push heroku master
@@ -109,7 +109,7 @@ Now, future deployments will always use the same set of dependencies.
 To update to newer versions:
 
 ```
-npm update
+yarn upgrade
 git add package-lock.json
 git commit -m 'Update dependencies'
 git push heroku master
